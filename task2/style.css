@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.background-image{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    background-image: url('./img/bodybg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.center-material{
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    >h1{
+        
+        color: rgb(0, 245, 253);
+        font-size: 4rem;
+    }
+}
+
+.header{
+    height: 2.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.317);
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >a{
+        text-decoration: none;
+        color: rgb(230, 230, 230);
+        margin: 0 2rem;
+    }
+}
+
+.container{
+    position: absolute;
+    top: 70%;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.parts{
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100%;
+    width: 100%;
+}
+
+.image{
+    background-image: url(./img/straw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26%;
+    width: 13%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.259);
+}
+
+#about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 3rem;
+    border-radius: 40% 40% 0 0;
+}
+
+.about-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-image{
+    height: 100%;
+    width: 20%;
+    background-image: url(./img/sush.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 58%;
+    margin-left: 8rem;
+}
+
+.about-education{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.education-image{
+    height: 100%;
+    width: 12%;
+    background-image: url(images/books.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 8rem;
+}
+
+
+.details{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >h1{
+        margin-bottom: 1rem;
+        color: rgb(255, 255, 255);
+        /* color: rgb(90, 18, 18); */
+    }
+    >p{
+        color: rgb(200, 200, 200);
+    }
+}
+
+.education{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >h1{
+        margin-bottom: 1rem;
+        color: rgb(255, 255, 255);
+    }
+    >h3{
+        margin-bottom: 0.5rem;
+        color: aliceblue;
+    }
+    >p{
+        margin-bottom: 0.5rem;
+        color: rgb(200, 200, 200);
+    }
+}
+
+#skills{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skills-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65%;
+    width: 80%;
+}
+
+.tools{
+    >h3{
+        margin-bottom: 1rem;
+    }
+
+    >ul li{
+        margin-bottom: 0.5rem;
+        list-style:circle;
+    }
+}
+
+#contact{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons a i{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#resume{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: #f7e9d7;
+    }
+}
+
+.footer{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+    text-align: center;
+    >h2{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header{
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+    }
+
+    .container{
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .center-material{
+        height: 10%;
+        width: 100%;
+        >h1{
+            font-size: 3rem;
+        }
+    }
+
+    .image{
+        display: none;
+    }
+
+    .education-image{display: none;}
+    .details-image{display: none;}
+
+    .parts{
+        height: 100%;
+        width: 100%;
+    }
+
+    #about{
+        border-radius:21px 21px 0 0;
+        width: 100%;
+    }
+
+    .about-details{
+        height: 100%;
+        width: 100%;
+    }
+
+    .details{
+        width: 100%;
+    }
+
+    .education{width: 100%;}
+
+    #skills{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        >h1{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .skills-content{
+        height: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tools{
+        height: 50%;
+    }
+
+
+    .footer{
+        height: 50%;
+    }
+  }
